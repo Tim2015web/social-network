@@ -1,0 +1,28 @@
+.content {
+  grid-area: 2 / 2 / 3 / 3;
+  width: 100%;
+  height: min-content;
+  padding: 20px;
+  border-radius: 16px;
+  border: 2px solid #4a678e;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+
+  &__icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  &__title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #4a678e;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+}

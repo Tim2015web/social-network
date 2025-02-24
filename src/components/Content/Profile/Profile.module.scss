@@ -1,0 +1,256 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f4f7fc;
+  /* Легкий фон */
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  &__user {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 20px;
+  }
+
+  &__avatar {
+    width: 180px;
+    height: 180px;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 2px solid #70bfff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__data {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__dataItem {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    color: #333;
+  }
+
+  &__dataItem strong {
+    color: #4a678e;
+  }
+
+  &__status {
+    min-height: 56px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #4a678e;
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #70bfff, #4a678e);
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  &__statusText {
+    font-weight: 700;
+    font-size: 18px;
+    color: white;
+    margin-left: 8px;
+
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+
+  &__statusForm {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+    margin-left: 8px;
+  }
+
+  &__statusInput {
+    flex-grow: 1;
+    padding: 8px 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    outline: none;
+    transition: border-color 0.3s ease;
+
+    &:focus {
+      border-color: #70bfff;
+    }
+  }
+
+  &__statusButton {
+    padding: 8px 12px;
+    font-size: 16px;
+    color: white;
+    background-color: #70bfff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #4a678e;
+    }
+  }
+}
+
+.posts {
+  font-family: "Montserrat", sans-serif;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
+  &__header {
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #4a678e;
+  }
+
+  &__newPost {
+    margin-bottom: 20px;
+  }
+
+  &__textarea {
+    width: 100%;
+    height: 120px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    resize: none;
+    margin-bottom: 10px;
+    outline: none;
+    transition: border-color 0.3s ease;
+
+    &:focus {
+      border-color: #70bfff;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    outline: none;
+    transition: border-color 0.3s ease;
+
+    &:focus {
+      border-color: #70bfff;
+    }
+  }
+
+  &__button {
+    padding: 10px 20px;
+    background-color: #70bfff;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  &__button:hover {
+    background-color: #4a678e;
+  }
+
+  &__myPosts {
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &__post {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__postImage {
+    width: 100%;
+    height: 200px;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 0 auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  &__postText {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 8px;
+  }
+
+  &__actions {
+    margin-top: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+  }
+
+  &__likeButton {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    color: #fff;
+    background-color: #70bfff;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #4a678e;
+    }
+  }
+
+  &__likeCount {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    color: #4a678e;
+  }
+}

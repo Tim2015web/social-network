@@ -1,0 +1,20 @@
+:root {
+  --color-white: #ffffff;
+  --color-blue: #4a678e;
+
+  --font-primary: "Montserrat", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-primary);
+}
+
+ul {
+  list-style: none;
+}

@@ -1,0 +1,8 @@
+.container {
+  padding: 20px;
+  display: grid;
+
+  grid-template-columns: min-content 1fr;
+  grid-template-rows: min-content 2fr;
+  gap: 16px;
+}

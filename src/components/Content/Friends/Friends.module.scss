@@ -1,0 +1,190 @@
+.friends {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+
+  // Стиль для кнопок навигации "Назад" и "Вперед"
+  .navButton {
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid #4a678e;
+    border-radius: 8px;
+    background-color: transparent;
+    color: #4a678e;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    &:hover {
+      background-color: #4a678e;
+      color: white;
+    }
+
+    &:disabled {
+      cursor: not-allowed;
+      background-color: #f0f0f0;
+      color: #b0b0b0;
+    }
+  }
+
+  // Стиль для страниц
+  span {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    &:hover {
+      background-color: #70bfff;
+      color: white;
+    }
+  }
+
+  // Стиль для активной страницы
+  .active {
+    font-weight: bold;
+    background-color: #70bfff;
+    color: white;
+  }
+
+  // Стиль для выпадающего списка
+  .select {
+    padding: 8px 16px;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    border: 1px solid #4a678e;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+
+    &:hover {
+      border-color: #70bfff;
+    }
+
+    &:focus {
+      outline: none;
+      border-color: #4a678e;
+    }
+
+    option {
+      padding: 8px;
+      font-family: "Montserrat", sans-serif;
+    }
+  }
+}
+
+.users {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &Card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px;
+    background-color: #f4f7fc;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  &Profile {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 20px;
+  }
+
+  &Avatar {
+    width: 180px;
+    height: 180px;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 2px solid #70bfff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &Avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &Info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    & p {
+      font-family: "Montserrat", sans-serif;
+      font-size: 16px;
+      color: #333;
+    }
+
+    & strong {
+      color: #4a678e;
+    }
+    & a {
+      color: #70bfff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #4a678e;
+      }
+    }
+  }
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+
+  &Status {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #4a678e;
+  }
+
+  & button {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: #ffffff;
+  }
+
+  & button:disabled {
+    background-color: gray;
+  }
+
+  &Subscribe {
+    background-color: #70bfff;
+    &:hover {
+      background-color: #4a678e;
+    }
+  }
+
+  &Unsubscribe {
+    background-color: #f44336;
+    &:hover {
+      background-color: #d32f2f;
+    }
+  }
+}

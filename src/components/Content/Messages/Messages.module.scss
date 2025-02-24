@@ -1,0 +1,101 @@
+.messages {
+  width: 100%;
+}
+
+.main {
+  padding-top: 32px;
+  display: flex;
+
+  &__users {
+    border-right: 2px solid #4a678e;
+    padding-left: 12px;
+    padding-right: 24px;
+  }
+
+  &__users ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    list-style: none;
+  }
+
+  &__user {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #4a678e;
+    text-transform: capitalize;
+    text-decoration: none;
+  }
+
+  &__user:hover {
+    color: #70bfff;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+  }
+
+  &__userActive {
+    color: #ff8c42;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+  }
+
+  &__messages {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    padding-left: 24px;
+  }
+
+  &__messages div {
+    padding: 12px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333333;
+    line-height: 1.5;
+    background-color: #f4f7fc;
+    border-radius: 8px;
+  }
+}
+
+.footer {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+  padding: 16px;
+  border-top: 2px solid #4a678e;
+
+  &__textarea {
+    flex-grow: 1;
+    height: 50px;
+    padding: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    resize: none;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+
+  &__textarea:focus {
+    border-color: #70bfff;
+  }
+
+  &__button {
+    padding: 10px 20px;
+    background-color: #70bfff;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  &__button:hover {
+    background-color: #4a678e;
+  }
+}

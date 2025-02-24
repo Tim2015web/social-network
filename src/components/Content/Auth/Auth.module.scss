@@ -1,0 +1,89 @@
+.auth {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.content {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 400px;
+  padding: 40px;
+  background-color: #f4f7fc;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: 2px solid #ffffff;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+
+      label {
+        width: 100%;
+        font-family: "Montserrat", sans-serif;
+        font-size: 14px;
+        color: #4a678e;
+        font-weight: 600;
+        user-select: none;
+      }
+
+      input {
+        padding: 10px 16px;
+        font-size: 16px;
+        border: 1px solid #4a678e;
+        border-radius: 8px;
+        background-color: #fff;
+        transition: border-color 0.3s ease;
+
+        &:focus {
+          outline: none;
+          border-color: #70bfff;
+          box-shadow: 0 0 5px rgba(112, 191, 255, 0.5);
+        }
+
+        &::placeholder {
+          color: #b0b0b0;
+        }
+      }
+
+      .error {
+        font-family: "Montserrat", sans-serif;
+        font-size: 14px;
+        color: #e74c3c;
+      }
+    }
+
+    div:nth-child(3) {
+      flex-direction: row;
+    }
+
+    button {
+      padding: 12px;
+      font-family: "Montserrat", sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      color: white;
+      background-color: #70bfff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #4a678e;
+      }
+
+      &:disabled {
+        background-color: #f0f0f0;
+        color: #b0b0b0;
+        cursor: not-allowed;
+      }
+    }
+  }
+}

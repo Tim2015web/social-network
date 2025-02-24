@@ -1,0 +1,41 @@
+.navbar {
+  width: 100%;
+  padding: 20px 20px 40px 20px;
+  background-color: #4a678e;
+  border-radius: 16px;
+
+  &__menu {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  &__menuLink {
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #70bfff;
+    }
+  }
+
+  &__menuLinkActive {
+    color: #70bfff;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 100%;
+      border-bottom: 2px solid #70bfff;
+    }
+  }
+}
