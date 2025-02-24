@@ -1,52 +1,69 @@
-# React + TypeScript + Vite
+# Социальная сеть
 
-react_social-network
+🚀 **Социальная сеть** — это учебный проект, представляющий собой простую социальную сеть, разработанную на **React + Zustand**.  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🔗 Демо (GitHub Pages)
+[![Deploy](https://img.shields.io/badge/GitHub_Pages-Live-blue?style=flat-square)](https://tim2015web.github.io/social-network/)
 
-Currently, two official plugins are available:
+## 🛠 Используемые технологии
+- ⚛️ **React**
+- 🚀 **Vite**
+- 🔄 **Zustand**
+- 💅 **CSS Modules**
+- 📦 **TypeScript**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📂 Запуск проекта локально
 
-## Expanding the ESLint configuration
+1. **Склонировать репозиторий**  
+   ```sh
+   git clone https://github.com/tim2015web/social-network.git
+   cd social-network
+   ```
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+2. **Установить зависимости**  
+   ```sh
+   npm install
+   ```
 
-- Configure the top-level `parserOptions` property like this:
+3. **Запустить проект**  
+   ```sh
+   npm run dev
+   ```
+
+4. **Открыть в браузере**  
+   ```
+   http://localhost:5173/
+   ```
+
+## 🚀 Деплой на GitHub Pages
+
+1. **Собрать проект**  
+   ```sh
+   npm run build
+   ```
+
+2. **Разместить на GitHub Pages**  
+   ```sh
+   npm run deploy
+   ```
+
+**Важно!** Убедись, что в `vite.config.js` указан корректный `base`:
 
 ```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+export default defineConfig({
+  base: "/social-network/",
+  plugins: [react()],
+});
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## 📌 Функционал
+- ✅ Регистрация / Авторизация  
+- ✅ Личная страница  
+- ✅ Добавление друзей  
+- ✅ Чаты и сообщения  
+- ✅ 404-страница  
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## 📝 TODO (планы на будущее)
+- 🔹 Улучшить UI  
+- 🔹 Добавить загрузку изображений  
+- 🔹 Улучшить мобильную версию  
