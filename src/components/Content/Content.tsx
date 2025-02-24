@@ -10,7 +10,7 @@ const Friends = React.lazy(() => import("./Friends/Friends"));
 const Photos = React.lazy(() => import("./Photos/Photos"));
 const Music = React.lazy(() => import("./Music/Music"));
 const Settings = React.lazy(() => import("./Settings/Settings"));
-const UndefinedPage = React.lazy(() => import("./UndefinedPage/UndefinedPage"));
+// const UndefinedPage = React.lazy(() => import("./UndefinedPage/UndefinedPage"));
 const Auth = React.lazy(() => import("./Auth/Auth"));
 
 export default function Content() {
