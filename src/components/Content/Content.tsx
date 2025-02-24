@@ -47,7 +47,7 @@ export default function Content() {
           <Route path="/music" element={<Music />} />
           <Route path="/settings" element={<Settings />} />
           <Route path="/auth" element={<Auth />} />
-          <Route path="*" element={<UndefinedPage />} />
+          {/* <Route path="*" element={<UndefinedPage />} /> */}
         </Routes>
       </Suspense>
     </div>
