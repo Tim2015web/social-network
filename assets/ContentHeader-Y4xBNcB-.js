@@ -1,1 +1,0 @@
-import{j as s,f as e}from"./index-B1LNkIDO.js";function c({source:r,name:a="Название"}){return s.jsxs("div",{className:e.header,children:[s.jsx("img",{className:e.header__icon,src:r,alt:a}),s.jsx("p",{className:e.header__title,children:a})]})}export{c as C};
